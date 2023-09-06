@@ -1,0 +1,29 @@
+/*
+ * Write a program to Accept a String and count no. of Spaces.
+ * eg: 0 1 2 3 4 5 6
+ *     J   A   V   A
+ */
+import java.util.*;
+public class SpaceCount {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str;
+		System.out.print("Enter String: ");
+		str=sc.nextLine();
+		int Space=0;
+		for(int i=0;i<str.length();i++)
+		{
+			if(str.charAt(i)==' ')
+			{
+				Space++;
+			}
+			
+		}
+		
+		
+		System.out.println("Number of Space in this string is: "+Space);
+		sc.close();
+	}
+
+}
